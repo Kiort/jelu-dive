@@ -7,13 +7,31 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <div>
-            <ul>
-                <ul class="nav nav-tabs">
+
+        <style>
+            .navbar {
+                overflow: hidden;
+                background-color: #ffffff;
+                position: fixed; /* Set the navbar to fixed position */
+                top: 0; /* Position the navbar at the top of the page */
+                width: 100%; /* Full width */
+}
+        </style>
+        <header style="padding: 0px;">
+            <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Home.html"><img src="slike/jelly logo web.svg" style="height: 80px;"></a>
+                </div>
+
+                
+            
+                <ul class="nav nav-tabs" style="padding: 0px">
                     <li class="nav-item">
                     <a class="nav-link active" href="Home.html">Home</a>
 
-
+                    
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="Dive.html">Dive</a>
@@ -46,8 +64,88 @@
 
                     
                 </ul>
-            </ul>
-        </div>
+               
+            </div>
+        </nav>
+            
+        </header>
+
+
+        <article style="margin: 0;">
+            <style>
+            .imgclick {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .imgclick img {
+                width: 100%;
+                transition: 0.5s all ease-in-out;
+            }
+
+            .imgclick:hover img{
+                transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+
+            
+            .caption1 {
+                position: absolute;
+                top: 40%;
+                left: 10%;
+                width: 100%;
+                color:azure;}
+
+                .caption2 {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                color:azure;}
+            </style>
+
+            <div class="row-cols-12">
+                <img src="slike/home.jpg" alt="divers in the blue" style="width:100%; height: 600px; object-fit: cover;">
+                    <div class="caption1"><h1>ŽELIŠ AVANTURE POD MOREM?!</h1></div>
+            </div>
+        
+
+            <div class="row" style="margin: 0;">
+                <div class="col-md-6 imgclick text-center" style="margin: 0;">
+                    <a href="Dive.html"><img src="slike/home_diving.jpg" alt="divers descent" style="width:100%; max-height: 400px; object-fit: cover;" class="img-responsive"></a>
+                    <div class="caption2"><h2>RONI KOD NAS!</h2></div>
+                 </div>
+            
+                <div class="col-md-6 imgclick text-center" style="margin: 0;">
+                    <a href="Courses.html"><img src="slike/home_course.jpg" alt="divers descent" style="width:100%; max-height: 400px; object-fit: cover;" class="img-responsive"></a>
+                    <div class="caption2"><h2>POSTANI RONILAC!</h2></div>
+            </div>
+            
+            
+
+
+            <div class="row">
+                <div class="col-md-5" style="margin-top: 3%;">
+                    <h2 style="margin-left: 20%;">Zaronite između kopna i Krka</h2>
+                    <p style="margin-left: 20%;">Mnogo lijepe velike i male veličanstvene lokacije 
+                        <br>za ronjenje nalaze se između Krka i kopna. 
+                        <br>Jedna od njih je naš lijepi house reef do kojeg 
+                        <br>je samo par koraka od dive centra do mora. Uz 
+                        <br>to nalazi se i mjesto za uživanje na plaži i 
+                        <br>odmah pored kafič i restoran koje če ispuniti 
+                        <br>sve vaše želje. Sa našem brodu vozimo do 30 
+                        <br>različitih lokacija od kojih vidimo do tri na 
+                        <br>dan. Na njima je moguče vidjeti mnogo različite 
+                        <br>životinje Jadranskog mora.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="slike/home_boat.JPG" alt="diving boat" style="width:100%; max-height: 400px; object-fit: cover; margin: 3%;">
+                </div>
+            </div>
+
+            
+         </article>
 
     </body>
 </html>
